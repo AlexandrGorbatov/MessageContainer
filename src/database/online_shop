@@ -1,0 +1,13 @@
+drop database messages_container;
+
+create database IF not exists messages_container;
+
+USE messages_container;
+
+create table message(
+id int primary key auto_increment,
+user_name varchar(100) not null,
+message_text varchar(100),
+created_date timestamp not null)
+DEFAULT CHARSET=utf8;
+
