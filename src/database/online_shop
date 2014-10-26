@@ -11,3 +11,14 @@ message_text varchar(100),
 created_date timestamp not null)
 DEFAULT CHARSET=utf8;
 
+
+INSERT INTO message (id, user_name, message_text,created_date) VALUES
+('1', 'Alex', 'hello' ,' 2014-05-01 18:19:03'),
+('2', 'Nick', 'have a nice day!' ,'2014-05-06 18:19:03'),
+('3', 'Pavel', 'Action!' ,'2014-05-06 18:19:03'),
+('4', 'Artem', 'notepad' ,'2014-05-06 18:19:03'),
+('5', 'Mike', 'have a rest' ,'2014-05-06 18:19:03'),
+('6', 'Vova', 'love spring' ,'2014-05-06 18:19:03');
+
+
+

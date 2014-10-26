@@ -11,7 +11,7 @@
 
     <context:property-placeholder location="classpath:database.properties"/>
 
-    <context:component-scan base-package="com.message.mvc.services" />
+    <context:component-scan base-package="com.message.mvc" />
 
 
     <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
@@ -47,9 +47,6 @@
     <beans:bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <beans:property name="sessionFactory" ref="sessionFactory" />
     </beans:bean>
-
-
-
 
 
 </beans:beans>

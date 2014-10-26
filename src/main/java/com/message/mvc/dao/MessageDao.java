@@ -2,6 +2,7 @@ package com.message.mvc.dao;
 
 import com.message.mvc.model.Message;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -13,8 +14,10 @@ public interface MessageDao {
 
     public List getAll();
 
-    public List findByName();
+    public List findByName(String userName);
 
-    public List findByDate();
+    public List findByDate(Date dateFrom, Date dateTo);
+
+    public Message findById(int id);
 
 }

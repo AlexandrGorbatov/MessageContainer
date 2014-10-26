@@ -13,7 +13,7 @@ public interface MessageService {
 
     public List getAll();
 
-    public List findByName();
+    public List findByName(String userName);
 
-    public List findByDate();
+    public List findByDate(String dateFrom, String dateTo);
 }
